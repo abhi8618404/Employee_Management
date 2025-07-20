@@ -42,3 +42,19 @@ Employee_Management/
 │   └── package.json
 └── README.md
 
+
+1. Clone the Repo
+
+
+git clone https://github.com/abhi8618404/Employee_manager_clean.git
+cd Employee_manager_clean
+
+2. Start Backend (Spring Boot)
+
+cd backend
+./mvnw spring-boot:run
+
+3.Start Frontend (React)
+cd frontend
+npm install
+npm start
