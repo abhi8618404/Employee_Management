@@ -1,130 +1,109 @@
-# Employee Management System
+# 🧑‍💼 Employee Management System
 
-A full-stack web application to manage employees — built with Java (Spring Boot) for the backend and React for the frontend.
+![Java](https://img.shields.io/badge/Java-007396.svg?&logo=java&logoColor=white) 
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F.svg?&logo=springboot&logoColor=white) 
+![React](https://img.shields.io/badge/React-61DAFB.svg?&logo=react&logoColor=black) 
+![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?&logo=mysql&logoColor=white) 
+![REST API](https://img.shields.io/badge/REST_API-000000.svg?&logo=fastapi&logoColor=white)  
+
+A **full-stack Employee Management System** that allows HR/Admins to manage employee records efficiently with CRUD operations, authentication, and state management.  
+Built using **Spring Boot (Backend)**, **React (Frontend)**, and **MySQL (Database)**.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- Add, update, and delete employee records
-- View employee details
-- Search employees
-- RESTful API integration
-- Frontend + backend separation
+- 👨‍💼 Add, update, delete, and view employee details.
+- 🔐 Authentication & Authorization (JWT ready).
+- 📊 Search and filter employees.
+- 💾 Persistent data storage with MySQL.
+- 🌐 RESTful APIs for integration.
 
 ---
 
 ## 🛠 Tech Stack
 
 ### Backend:
-- Java 17
-- Spring Boot
-- Spring Data JPA
-- MySQL / H2 (choose your DB)
-- Maven
+- **Java 17**
+- **Spring Boot**
+- **Spring Data JPA**
+- **Hibernate ORM**
+- **MySQL**
+- **Maven**
 
 ### Frontend:
-- React
-- Axios
-- Bootstrap / TailwindCSS
+- **React.js**
+- **Axios**
+- **Bootstrap**
 
 ---
 
 ## 📂 Project Structure
 
-```bash
-Employee_Management/
-├── backend/
-│   ├── src/
-│   └── pom.xml
-├── frontend/
-│   ├── src/
-│   └── package.json
-└── README.md
-
 ```
-1. Clone the Repo
+Employee_Management/
+│
+├── backend/               # Spring Boot Backend
+│   ├── src/main/java
+│   ├── src/main/resources
+│   └── pom.xml
+│
+├── frontend/              # React Frontend
+│   ├── src
+│   ├── public
+│   └── package.json
+│
+└── README.md
+```
 
+---
 
-git clone https://github.com/abhi8618404/Employee_manager_clean.git
-cd Employee_manager_clean
+## ⚡ Installation & Setup
 
-2. Start Backend (Spring Boot)
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/abhi8618404/Employee_Management.git
+cd Employee_Management
+```
 
+### 2️⃣ Backend Setup
+```bash
 cd backend
-./mvnw spring-boot:run
+mvn clean install
+mvn spring-boot:run
+```
 
-3.Start Frontend (React)
+### 3️⃣ Frontend Setup
+```bash
 cd frontend
 npm install
 npm start
-
-
-# 🧰 Employee Management System – Backend (Spring Boot)
-
-This is the **backend** of the Employee Management System, built using **Spring Boot**. It provides a REST API for managing employee data and can be consumed by any frontend client (like Angular, React, etc.).
+```
 
 ---
 
-## 🔧 Tech Stack
+## 🔗 API Endpoints
 
-- Java 17  
-- Spring Boot  
-- Spring Data JPA  
-- MySQL / H2 Database  
-- Maven  
-
----
-
-## 📂 Project Structure
-
-backend/
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── com.example.employeemanagement/
-│ │ │ ├── controller/
-│ │ │ ├── model/
-│ │ │ ├── repository/
-│ │ │ ├── service/
-│ │ │ └── EmployeeManagementApplication.java
-│ │ └── resources/
-│ │ ├── application.properties
-│ │ └── data.sql
-└── pom.xml
-
+| Method | Endpoint           | Description              |
+|--------|-------------------|--------------------------|
+| GET    | /employees        | Get all employees        |
+| GET    | /employees/{id}   | Get employee by ID       |
+| POST   | /employees        | Add a new employee       |
+| PUT    | /employees/{id}   | Update employee details  |
+| DELETE | /employees/{id}   | Delete employee          |
 
 ---
 
-## 🧪 API Endpoints
+## 📸 Screenshots
 
-| Method | Endpoint         | Description              |
-|--------|------------------|--------------------------|
-| GET    | /api/employees   | Get all employees        |
-| GET    | /api/employees/{id} | Get employee by ID  |
-| POST   | /api/employees   | Add new employee         |
-| PUT    | /api/employees/{id} | Update employee     |
-| DELETE | /api/employees/{id} | Delete employee     |
+> *Add your application screenshots here*
 
 ---
 
-## 🚀 How to Run
+## 📜 License
+This project is licensed under the MIT License.
 
-### Prerequisites:
-- Java 17
-- Maven
-- MySQL (or use H2)
+---
 
-### Steps:
-
-```bash
-cd backend
-./mvnw spring-boot:run
-
-spring.datasource.url=jdbc:mysql://localhost:3306/your_db
-spring.datasource.username=root
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-
-
+## 🤝 Contributing
+Pull requests are welcome. For significant changes, please open an issue first to discuss the proposed changes.
